@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.triage.Update_Vitals" >
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/HeartRateEditText"
+        android:onClick="updateVitals"
+        android:text="@string/Update_vitals" />
+
+    <Button
+        android:id="@+id/backToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/menuButton"
+        android:onClick="goToMenu"
+        android:text="@string/Menu" />
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/TemperaturePrompt" />
+
+    <EditText
+        android:id="@+id/TemperatureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Temperature"
+        android:ems="10"
+        android:hint="@string/Temperature" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/BloodPressurePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TemperatureEditText"
+        android:text="@string/BloodPressurePrompt" />
+
+    <EditText
+        android:id="@+id/SystolicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BloodPressurePrompt"
+        android:ems="10"
+        android:hint="@string/Systolic" />
+
+    <EditText
+        android:id="@+id/DiastolicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SystolicEditText"
+        android:ems="10"
+        android:hint="@string/Diastolic" />
+
+    <TextView
+        android:id="@+id/HeartRatePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DiastolicEditText"
+        android:text="@string/HeartRatePrompt" />
+
+    <EditText
+        android:id="@+id/HeartRateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/HeartRatePrompt"
+        android:ems="10"
+        android:hint="@string/Heartrate" />
+
+</RelativeLayout>

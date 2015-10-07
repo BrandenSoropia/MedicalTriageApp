@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.triage.SearchActivity" >
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/health_card_prompt"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Given Patient Health Card Number -->
+
+    <EditText
+        android:id="@+id/cardSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:hint="@string/health_card_number"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+            
+    <!-- Press to Search for Patient Button -->
+         
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:onClick="searchForPatient"
+        android:text="@string/search_button" />
+<!-- Move to Check In Activity -->
+
+    <Button
+        android:id="@+id/check_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:onClick="goToCheckIn"
+        android:text="@string/check_in" />
+
+</LinearLayout>

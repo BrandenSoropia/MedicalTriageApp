@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.triage.PastVisitSelection" >
+
+    <TextView
+        android:id="@+id/VisitTimePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/VisitStartedAt" />
+
+    <TextView
+        android:id="@+id/visitTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="38dp"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/OlderVisitsButton"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:onClick="getOlderVisitRecord"
+                android:text="@string/OlderVisit" />
+
+            <Button
+                android:id="@+id/SelectVisitButton"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:onClick="goToSelectedVisitRecord"
+                android:text="@string/SelectVisit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/newerVisitsButton"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:onClick="getNewerVisitRecord"
+                android:text="@string/NewerVisits" />
+
+            <Button
+                android:id="@+id/ReturnToMenus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:onClick="goToMainMenu"
+                android:text="@string/Menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.triage.MainActivity" >
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/Main_screen" />
+    
+    <!--  Move to Check in Button -->
+
+    <Button
+        android:id="@+id/main_check_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="goToCheckIn"
+        android:text="@string/Check_in" />
+
+    <!-- Move to Search Activity Button -->
+    
+    <Button
+        android:id="@+id/main_search_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="goToSearch"
+        android:text="@string/Search_patient" />
+    
+    <!-- Load Button
+    REQUIRES: Read the files stuff -->
+
+    <Button
+        android:id="@+id/main_load_records"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="loadProfile"
+        android:text="@string/Load_records" />
+    
+	<!-- Save Button 
+	REQURESL: Write to save file stuff-->
+
+    <Button
+        android:id="@+id/main_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Main_save" 
+        android:onClick="saveFileBuffers" />
+
+    <Button
+        android:id="@+id/new_patient_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToNewPatientActivity"
+        android:text="New Patient" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.triage.Check_in" >
+
+    <TextView
+        android:id="@+id/VisitTimePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/Checked_in" />
+
+    <EditText
+        android:id="@+id/TemperatureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/VisitTimePrompt"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/health_card_number" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CheckInHealthCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/Menu" 
+        android:onClick="goToMenu"/>
+
+    <Button
+        android:id="@+id/CheckOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="46dp"
+        android:onClick="checkOutHealthCard"
+        android:text="@string/CheckOut" />
+
+    <Button
+        android:id="@+id/CheckInHealthCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TemperatureEditText"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/CheckOutButton"
+        android:onClick="checkInHealthCard"
+        android:text="@string/check_in" />
+
+</RelativeLayout>

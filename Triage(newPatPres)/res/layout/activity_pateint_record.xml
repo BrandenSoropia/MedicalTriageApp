@@ -1,0 +1,308 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.triage.PateintRecord" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" >
+
+            <RelativeLayout
+                android:layout_width="116dp"
+                android:layout_height="103dp" >
+
+                <TextView
+                    android:id="@+id/NamePrompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NamePrompt" />
+
+                <TextView
+                    android:id="@+id/DateOfBirthPrompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/NamePrompt"
+                    android:text="@string/DateOfBirthPrompt" />
+
+                <TextView
+                    android:id="@+id/HealthCardPrompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/DateOfBirthPrompt"
+                    android:text="@string/HealthCardPrompt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="193dp"
+                android:layout_height="103dp" >
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:text="@string/hello_world" />
+
+                <TextView
+                    android:id="@+id/DateOfBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/hello_world" />
+
+                <TextView
+                    android:id="@+id/HealthCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/DateOfBirth"
+                    android:text="@string/hello_world" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="116dp"
+            android:layout_height="103dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp" >
+
+            <TextView
+                android:id="@+id/temperaturePrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/Temperature"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/systolicPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/temperaturePrompt"
+                android:text="@string/Systolic"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bloodPressurePrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/diastolicPrompt"
+                android:text="@string/Heartrate"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/diastolicPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/systolicPrompt"
+                android:text="@string/Diastolic"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="116dp"
+            android:layout_height="103dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/relativeLayout3" >
+
+            <TextView
+                android:id="@+id/Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/Temperature"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Systolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Temp"
+                android:text="@string/Systolic"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/HeartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Diastolic"
+                android:text="@string/Heartrate"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Diastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Systolic"
+                android:text="@string/Diastolic"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="294dp"
+            android:layout_height="56dp"
+            android:layout_above="@+id/relativeLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timeTaken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_toRightOf="@+id/TimeTakenPrompt"
+                android:layout_weight="1.38"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/TimeTakenPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33dp"
+                android:layout_toRightOf="@+id/relativeLayout2"
+                android:text="@string/TimeTaken" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/OlderVitalsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="lookForOlderVitals"
+                    android:text="@string/oldVitalsButton" />
+
+                <Button
+                    android:id="@+id/NewVitalsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="lookForNewerVitals"
+                    android:text="@string/newVitalsButton" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="218.22" >
+
+        <Button
+            android:id="@+id/UpdateVitalsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ReturnToMenus"
+            android:onClick="goToVitalsUpdate"
+            android:text="@string/Update_vitals" />
+
+        <Button
+            android:id="@+id/ReturnToMenus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="goToMenu"
+            android:text="@string/Menu" />
+
+        <Button
+            android:id="@+id/ViewOlderVisits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/UpdateVitalsButton"
+             android:onClick="goToPastVisits"
+            android:text="@string/ViewOlderVisits" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="218.22" >
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Search Activity -->
+    <string name="app_name">Triage: Main Menu</string>
+    <string name="Main_screen">General Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="Check_in">Check In</string>
+    <string name="Search_patient">Search By Card Number</string>
+    <string name="Main_save">Save</string>
+    <string name="Load_records">Load Records</string>
+    <string name="title_activity_check_in">Patient Check In and Check Out</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Menu">Return To Menu</string>
+    <string name="title_activity_update__vitals">Update Patient Vitals</string>
+
+    <!-- Search Activity -->
+    <string name="title_activity_search">Patient Search</string>
+    <string name="health_card_prompt">Please input a patient\'s health card below:</string>
+    <string name="health_card_number">Health Card Number</string>
+    <string name="search_button">Search</string>
+    <string name="check_in">Check In</string>
+    <string name="title_activity_pateint_record">Patient\'s Current Visit Records</string>
+
+    <!-- Patrient Record Activity -->
+    <string name="all_records">All Past Records</string>
+    <string name="current_visit_records">Current Visit Records</string>
+    <string name="title_activity_all_past_records">AllPastRecords</string>
+    <string name="title_activity_current_visit_records">CurrentVisitRecords</string>
+    <string name="symptoms">Symptoms:</string>
+    <string name="vitals">Vitals:</string>
+    <string name="update_button">Update</string>
+
+    <!-- update_vitals Activity -->
+    <string name="Update_vitals">Update</string>
+    <string name="title_activity_update_symptoms">Update Patient Symptoms</string>
+    <string name="label_text">Enter New Values</string>
+    <string name="measurement">Measurement</string>
+
+    <!-- update_symptoms -->
+    <string name="Update_Symptoms">Update Symptoms</string>
+    <string name="Update_Symptom">Enter new Values</string>
+    <string name="symptoms_prompt">Input Symptoms Here</string>
+
+    <!-- Check_in -->
+    <string name="Checked_in">Check In or Out</string>
+    <string name="BloodPressurePrompt">Enter the blood pressure systolic then diastolic.</string>
+    <string name="TemperaturePrompt">Enter a temperature.</string>
+    <string name="HeartRatePrompt">Enter a heart rate.</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Systolic">Systolic</string>
+    <string name="Diastolic">Diastolic</string>
+    <string name="Heartrate">Heartrate</string>
+    <string name="NamePrompt">Name: </string>
+    <string name="DateOfBirthPrompt">Date Of Birth:</string>
+    <string name="HealthCardPrompt">Healthcard: </string>
+    <string name="newVitalsButton">Newer Vitals</string>
+    <string name="oldVitalsButton">Older Vitals</string>
+    <string name="TimeTaken">Time Taken: </string>
+    <string name="ViewOlderVisits">Past Visits</string>
+    <string name="title_activity_past_visit_selection">Patient\'s Visit History</string>
+    <string name="OlderVisit">Older Visits</string>
+    <string name="NewerVisits">Newer Visits</string>
+    <string name="SelectVisit">Select Visit</string>
+    <string name="VisitStartedAt">Visit started at: </string>
+    <string name="CheckOut">Check Out</string>
+    <string name="title_activity_past_visit_vital_show">Past Visit Vitals History</string>
+    <string name="title_activity_new_patient">NewPatient</string>
+
+</resources>

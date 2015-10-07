@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.triage.NewPatient" >
+
+    <EditText
+        android:id="@+id/new_patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Patient&apos;s First and Last Name" />
+
+    <EditText
+        android:id="@+id/new_patient_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="Date of Birth: YYYY-MM-DD" />
+
+    <EditText
+        android:id="@+id/new_patient_health_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="Health Card" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/submit_new_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:onClick="createNewPatient"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/return_to_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToMenu"
+            android:text="Main Menu" />
+
+    </LinearLayout>
+
+</LinearLayout>
